@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CardInfo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgCard"
+                android:layout_width="339dp"
+                android:layout_height="168dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/metrocard_Img"
+                app:srcCompat="@drawable/metrocard" />
+
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:text="@string/newCard_Name" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:hint="@string/newCard_NameHint"
+                android:inputType="text|textCapSentences"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/lblIni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:text="@string/newCard_Ini" />
+
+            <me.abhinay.input.CurrencyEditText
+                android:id="@+id/txtIni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:hint="@string/newCard_IniHint"
+                android:inputType="number"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/lblExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:text="@string/newCard_Exp" />
+
+            <EditText
+                android:id="@+id/txtExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:hint="@string/newCard_ExpHint"
+                android:inputType="date"
+                android:padding="20dp" />
+
+            <LinearLayout
+                android:id="@+id/llBtns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btnRch"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_back_alt"
+                    android:text="@string/btnRecharge"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btnTrip"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_back_alt"
+                    android:text="@string/btnTrip"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/border_back"
+                android:padding="20dp"
+                android:text="@string/newCard_Add"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

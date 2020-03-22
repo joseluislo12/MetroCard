@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CardInfo">
+    tools:context=".activities.CardInfo"
+    android:scrollbarThumbVertical="@drawable/custom_scroll_style">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -75,6 +76,16 @@
                 android:padding="20dp" />
 
             <TextView
+                android:id="@+id/numberRides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:text="@string/numberRides" />
+
+            <TextView
                 android:id="@+id/lblExp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,8 +104,9 @@
                 android:layout_marginRight="20dp"
                 android:autofillHints=""
                 android:background="@drawable/border"
+                android:ems="10"
                 android:hint="@string/newCard_ExpHint"
-                android:inputType="date"
+                android:inputType="none"
                 android:padding="20dp" />
 
             <LinearLayout

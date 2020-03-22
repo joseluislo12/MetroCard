@@ -6,15 +6,12 @@
     <string name="newCard_ExpHint">Expiration Date</string>
     <string name="newCard_Ini">Initial Amount</string>
     <string name="Card_Amnt">Balance</string>
+    <string name="numberRides">Number of Rides: </string>
     <string name="newCard_IniHint">$0.00</string>
     <string name="newCard_Add">Add</string>
     <string name="metrocard_Img">MetroCard Image - Reference</string>
     <string name="edit_Icon">Edit Icon</string>
     <string name="btnUpdate">Update</string>
     <string name="btnRecharge">Recharge</string>
-    <string name="btnTrip">Trip</string>
-    <string name="Money_Icon">Money Icon - Recharge</string>
-    <string name="Train_Icon">Train Icon - Trip</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
+    <string name="btnTrip">Ride</string>
 </resources>
